@@ -1,0 +1,94 @@
+body,
+input,
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background:#E2DCC8;
+}
+.container1 ,h1{
+  width: 50%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+}
+
+header {
+  padding: 15px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  background: #0F3D3E;
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-radius: 10px;
+}
+h1{
+  color: 100F0F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+
+}
+
+header input {
+  width: 100%;
+  height: 50px;
+  float: left;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  text-indent: 18px;
+  padding: 0 60px 0 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px 25px 25px 5px;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+}
+
+header input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header input:-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header input::-moz-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header button {
+  
+  width: 50px;
+  height: 50px;
+
+  top:15px;
+  right:15px;
+  z-index:2;
+
+  border-radius: 25px;
+  background: #fff;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: -50px;
+  
+}
+
+header button img {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
