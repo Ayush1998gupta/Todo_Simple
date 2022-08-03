@@ -152,11 +152,6 @@ ul.todo li .buttons button:last-of-type:before {
 i{
   font-size: 20px;
 }
-
-/* #todo .complete i{
-  background-color: black;
-  color: white;
-} */
 .remove i:hover{
   color: red;
 }
