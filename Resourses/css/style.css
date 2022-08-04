@@ -185,3 +185,7 @@ ul.todo#completed:after {
   margin: 5px 0;
 }
 
+.text{
+  text-decoration: line-through;
+}
+

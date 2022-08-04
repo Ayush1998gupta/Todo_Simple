@@ -26,7 +26,7 @@ function removeItem() {
     data.complete.splice(data.complete.indexOf(value), 1);
   }
   parent.removeChild(item);
-  itemLeft();
+  // itemLeft();
 }
 
 function completeItem() {
@@ -56,8 +56,7 @@ function completeItem() {
   } else {
     this.innerHTML = ' <i class="fa-regular fa-circle-check"></i>';
   }
-
-  itemLeft();
+  // itemLeft();
 }
 
 // Adds a new item to the todo list
@@ -82,6 +81,7 @@ function addItemTodo(text) {
 
   // Add click event for complete items
   complete.addEventListener('click', completeItem);
+  complete.addEventListener('click', deco);
 
   buttons.appendChild(remove);
   buttons.appendChild(complete);
@@ -89,6 +89,19 @@ function addItemTodo(text) {
   list.insertBefore(item, list.childNodes[0]);
 }
 
+function deco() {
+  var item = this.parentNode.parentNode;
+  var parent = item.parentNode;
+  var id = parent.id;
+
+  if (id === 'completed') {
+    item.classList.add('text');
+  } else {
+    item.classList.remove('text');
+  }
+}
+
+
 function itemLeft() {
-   document.querySelector('h3').innerText= `${data.todo.length} Tasks left`
+  document.querySelector('h3').innerText = `${data.todo.length} Tasks left`;
 }
