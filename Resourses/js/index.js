@@ -26,7 +26,7 @@ function removeItem() {
     data.complete.splice(data.complete.indexOf(value), 1);
   }
   parent.removeChild(item);
-  // itemLeft();
+  itemLeft();
 }
 
 function completeItem() {
@@ -56,7 +56,7 @@ function completeItem() {
   } else {
     this.innerHTML = ' <i class="fa-regular fa-circle-check"></i>';
   }
-  // itemLeft();
+  itemLeft();
 }
 
 // Adds a new item to the todo list
